@@ -1,25 +1,31 @@
-
 from flask import Flask, request, jsonify
 import pandas as pd
 import joblib
-import os
 
 app = Flask(__name__)
 
-# Memuat model dari folder yang sama dengan app.py
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "netflix_model.pkl")
+# Memuat pipeline preprocessing dan model
+model = joblib.load("netflix_model.pkl")
 
-model = joblib.load(MODEL_PATH)
-
+FEATURES = [
+    "type",
+    "title",
+    "director",
+    "cast",
+    "country",
+    "date_added",
+    "rating",
+    "duration",
+    "listed_in",
+    "description"
+]
 
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({
-        "message": "Netflix Release Year Prediction API",
-        "status": "running"
+        "status": "running",
+        "message": "Netflix Release Year Prediction API"
     })
-
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -28,24 +34,28 @@ def predict():
 
         if not isinstance(data, dict) or not data:
             return jsonify({
-                "error": "Kirim satu objek JSON berisi fitur."
+                "error": "Kirim satu objek JSON berisi data fitur."
             }), 400
 
-        # Mengubah input menjadi DataFrame
-        X_new = pd.DataFrame([data])
+        missing = [col for col in FEATURES if col not in data]
+        if missing:
+            return jsonify({
+                "error": "Fitur berikut belum dikirim.",
+                "missing_features": missing
+            }), 400
 
-        # Melakukan prediksi
+        X_new = pd.DataFrame(
+            [{col: data[col] for col in FEATURES}]
+        )
+
         prediction = model.predict(X_new)
 
         return jsonify({
-            "predicted_release_year": int(
-                round(float(prediction[0]))
-            )
+            "predicted_release_year": int(round(float(prediction[0])))
         })
 
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
-
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     app.run(debug=False, use_reloader=False)
