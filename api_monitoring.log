@@ -1,0 +1,44 @@
+2026-10-17 06:10:46,127 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-17 06:10:46,127 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-17 06:14:12,333 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-17 06:14:12,333 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-17 06:15:11,711 - INFO - method=GET path=/ status=200 response_time_ms=0.34
+2026-10-17 06:15:11,714 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:11] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:15,009 - INFO - method=GET path=/ status=200 response_time_ms=0.21
+2026-10-17 06:15:15,010 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:15] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:16,164 - INFO - method=GET path=/ status=200 response_time_ms=0.10
+2026-10-17 06:15:16,164 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:16] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:16,630 - INFO - method=GET path=/ status=200 response_time_ms=0.16
+2026-10-17 06:15:16,630 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:16] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:16,754 - INFO - method=GET path=/ status=200 response_time_ms=0.10
+2026-10-17 06:15:16,754 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:16] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:16,920 - INFO - method=GET path=/ status=200 response_time_ms=0.27
+2026-10-17 06:15:16,920 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:16] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:33,635 - INFO - method=GET path=/ status=200 response_time_ms=0.15
+2026-10-17 06:15:33,636 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:33] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:34,237 - INFO - method=GET path=/ status=200 response_time_ms=0.15
+2026-10-17 06:15:34,238 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:34] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:34,407 - INFO - method=GET path=/ status=200 response_time_ms=0.26
+2026-10-17 06:15:34,408 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:34] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:34,575 - INFO - method=GET path=/ status=200 response_time_ms=0.23
+2026-10-17 06:15:34,577 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:34] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:34,718 - INFO - method=GET path=/ status=200 response_time_ms=0.20
+2026-10-17 06:15:34,719 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:34] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:34,884 - INFO - method=GET path=/ status=200 response_time_ms=0.23
+2026-10-17 06:15:34,885 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:34] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:35,032 - INFO - method=GET path=/ status=200 response_time_ms=0.18
+2026-10-17 06:15:35,032 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:35] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:35,201 - INFO - method=GET path=/ status=200 response_time_ms=0.11
+2026-10-17 06:15:35,202 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:35] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:35,416 - INFO - method=GET path=/ status=200 response_time_ms=0.14
+2026-10-17 06:15:35,417 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:35] "GET / HTTP/1.1" 200 -
+2026-10-17 06:15:35,565 - INFO - method=GET path=/ status=200 response_time_ms=0.19
+2026-10-17 06:15:35,566 - INFO - 127.0.0.1 - - [17/Oct/2026 06:15:35] "GET / HTTP/1.1" 200 -
+2026-10-17 06:16:42,487 - INFO - method=GET path=/monitoring status=200 response_time_ms=0.25
+2026-10-17 06:16:42,487 - INFO - 127.0.0.1 - - [17/Oct/2026 06:16:42] "GET /monitoring?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-10-17 06:20:00,510 - INFO - method=POST path=/predict status=200 response_time_ms=217.38
+2026-10-17 06:20:00,511 - INFO - 127.0.0.1 - - [17/Oct/2026 06:20:00] "POST /predict HTTP/1.1" 200 -
+2026-10-17 06:20:07,473 - INFO - method=GET path=/monitoring status=200 response_time_ms=0.30
+2026-10-17 06:20:07,474 - INFO - 127.0.0.1 - - [17/Oct/2026 06:20:07] "GET /monitoring?utm_source=chatgpt.com HTTP/1.1" 200 -
